@@ -1,5 +1,7 @@
 # Learning Chrome Extension
 
+My notes, examples, and experiments with Chrome Extension.
+
 ## Extensions
 
 - [hello_world](./hello_world/)
