@@ -6,6 +6,32 @@ My notes, examples, and experiments with Chrome Extension. The tutorial is [here
 
 - [hello_world](./hello_world/)
 - [reading_time](./reading_time/)
+- [focus_mode](./focus_mode/)
+
+## Focus Mode (2024/12/05)
+
+> https://developer.chrome.com/docs/extensions/get-started/tutorial/scripts-activetab
+
+- Inject CSS:
+
+```js
+await chrome.scripting.insertCSS({
+  files: ["focus-mode.css"],
+  target: { tabId: tab.id },
+});
+```
+
+- Permission
+
+```json
+{
+  "permissions": ["activeTab", "scripting"]
+}
+```
+
+| Off                          | ON                         |
+| ---------------------------- | -------------------------- |
+| ![off](./focus_mode/off.png) | ![on](./focus_mode/on.png) |
 
 ## Reading Time (2024/11/22)
 
