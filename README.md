@@ -31,7 +31,7 @@ if (tabIds.length) {
 }
 ```
 
-- Permission
+- Permission:
 
 ```json
 {
@@ -39,6 +39,8 @@ if (tabIds.length) {
   "permissions": ["tabGroups"]
 }
 ```
+
+![tabs-manager](./tabs-manager/tabs-manager.png)
 
 ## Focus Mode (2024/12/05)
 
@@ -53,7 +55,7 @@ await chrome.scripting.insertCSS({
 });
 ```
 
-- Permission
+- Permission:
 
 ```json
 {
