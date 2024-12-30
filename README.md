@@ -4,9 +4,41 @@ My notes, examples, and experiments with Chrome Extension. The tutorial is [here
 
 ## Extensions
 
-- [hello-world](./hello-world/)
-- [reading-time](./reading-time/)
+- [tabs-manager](./tabs-manager/)
 - [focus-mode](./focus-mode/)
+- [reading-time](./reading-time/)
+- [hello-world](./hello-world/)
+
+## Tabs Manager (2024/12/30)
+
+> https://developer.chrome.com/docs/extensions/get-started/tutorial/popup-tabs-manager
+
+- Collect tabs:
+
+```js
+const tabs = await chrome.tabs.query({
+  url: ["https://github.com/*"],
+});
+```
+
+- Group tabs:
+
+```js
+const tabIds = tabs.map(({ id }) => id);
+if (tabIds.length) {
+  const group = await chrome.tabs.group({ tabIds });
+  await chrome.tabGroups.update(group, { title: "Repos" });
+}
+```
+
+- Permission
+
+```json
+{
+  "host_permissions": ["https://github.com/*"],
+  "permissions": ["tabGroups"]
+}
+```
 
 ## Focus Mode (2024/12/05)
 
