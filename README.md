@@ -4,9 +4,9 @@ My notes, examples, and experiments with Chrome Extension. The tutorial is [here
 
 ## Extensions
 
-- [hello_world](./hello_world/)
-- [reading_time](./reading_time/)
-- [focus_mode](./focus_mode/)
+- [hello-world](./hello-world/)
+- [reading-time](./reading-time/)
+- [focus-mode](./focus-mode/)
 
 ## Focus Mode (2024/12/05)
 
@@ -31,7 +31,7 @@ await chrome.scripting.insertCSS({
 
 | Off                          | ON                         |
 | ---------------------------- | -------------------------- |
-| ![off](./focus_mode/off.png) | ![on](./focus_mode/on.png) |
+| ![off](./focus-mode/off.png) | ![on](./focus-mode/on.png) |
 
 ## Reading Time (2024/11/22)
 
@@ -53,7 +53,7 @@ await chrome.scripting.insertCSS({
 
 | Off                            | ON                           |
 | ------------------------------ | ---------------------------- |
-| ![off](./reading_time/off.png) | ![on](./reading_time/on.png) |
+| ![off](./reading-time/off.png) | ![on](./reading-time/on.png) |
 
 ## Hello World (2024/11/12)
 
